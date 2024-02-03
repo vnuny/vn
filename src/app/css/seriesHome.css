@@ -1,0 +1,318 @@
+.main{
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.main .poster{
+    padding-right: 10%;
+}
+.main .poster img{
+    aspect-ratio: auto;
+    object-fit: contain;
+    width: 350px;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+.main .info{
+    width: fit-content;
+    margin-left: 10%;
+    color: white;
+}
+.main .info h2{
+    font-size: 2.5em;
+    max-width:500px;
+    margin-bottom: 30px;
+}
+.main .info .story{
+    width: 500px;
+    color: rgba(207, 207, 207, 0.868);
+}
+
+.main .info .details{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: fit-content;
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+
+.main .info .details h4{
+    margin: 5px 0;
+    margin-right: 30px;
+    color: rgba(207, 207, 207, 0.868);
+}
+
+.seasonsBox{
+    background-color: var(--secondaryColor);
+    border-radius: 30px;
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.episodesTitle{
+    width: 100%;
+    text-align: end;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+.seasonsBox .seasons{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.seasonsBox .seasons .seasonsBtnsBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.seasonsBox .seasons .seasonsBtnsBox button{
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 5px;
+    background-color: var(--secondaryColor);
+    color: white;
+    padding: 7px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.seasonsBox .seasons .seasonsBtnsBox button:hover{
+    background-color: var(--thirdColor);
+}
+
+.seasonsBox .episodes{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.seasonsBox .episodes .episode{
+    background-color: white;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    min-width: 165px;
+    display: flex;
+    flex-grow: 1;
+    cursor: pointer;
+    justify-content: center;
+}
+.seasonsBox .episodes .episode h3{
+    width: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.seasonsBox .episodes .episode h3 i {
+    background-color: var(--secondaryColor);
+    color: white;
+    height: 75%;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-left: 5px;
+}
+@media screen and  (min-width:320px) and (max-width:480px){
+    .home{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main .home .poster{
+        margin: 0;
+        padding: 0;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    .main .home .poster img{
+        width: 200px;
+    }
+    .main .home .info{
+        margin: 0;
+        padding: 0;
+        padding-left: 5%;
+    }
+    .main .home .info h2{
+        font-size: 2em;
+        margin-bottom: 10px ;
+        padding-right: 20px;
+    }
+    .main .home .info .story{
+        width: 100%;
+        font-size: 1em;
+        padding-left: 5px;
+    }
+    .main .downloads{
+        padding: 0;
+        padding-left: 5%;
+    }
+    .main .downloads h3{
+       font-size: 1.6em;
+    }
+    .main .downloads .links{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main .downloads .links a{
+        font-size: 1em;
+        margin: 0;
+        margin: 5px;
+    }
+    .watch h2{
+        font-size: 1.6em;
+        padding-left: 5%;
+    }
+    .watch .servers{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .watch .servers button{
+        margin: 0;
+        margin: 5px;
+    }
+    .watch iframe{
+        width: 90%;
+    }
+    .seasonsBox{
+        width: 90%;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .home{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main .home .poster{
+        margin: 0;
+        padding: 0;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    .main .home .poster img{
+        width: 200px;
+    }
+    .main .home .info{
+        margin: 0;
+        padding: 0;
+        padding-left: 5%;
+    }
+    .main .home .info h2{
+        font-size: 2em;
+        margin-bottom: 10px ;
+        padding-right: 20px;
+    }
+    .main .home .info .story{
+        width: 100%;
+        font-size: 1em;
+        padding-left: 5px;
+    }
+    .main .downloads{
+        padding: 0;
+        padding-left: 5%;
+    }
+    .main .downloads h3{
+       font-size: 1.6em;
+    }
+    .main .downloads .links{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main .downloads .links a{
+        font-size: 1em;
+        margin: 0;
+        margin: 5px;
+    }
+    .watch h2{
+        font-size: 1.6em;
+        padding-left: 5%;
+    }
+    .watch .servers{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .watch .servers button{
+        margin: 0;
+        margin: 5px;
+    }
+    .watch iframe{
+        width: 90%;
+    }
+    .seasonsBox{
+        width: 90%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+
+}
+
+.loadingMP{
+    width: 100%;
+    height: 100vh;
+    padding-top: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.loadingMP i{
+    position: absolute;
+    top: 120px;
+}
+
+.seriesHomeLoading{
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+}

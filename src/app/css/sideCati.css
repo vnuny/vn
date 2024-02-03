@@ -1,0 +1,67 @@
+.sideCatigoriys{
+    height: 100%;
+    width: fit-content;
+    padding-top: 30px;
+    padding-right: 30px;
+    position: sticky;
+    top: 60px;
+}
+.sideCatigoriys .sideCategoriesBox::selection{
+    display: none;
+}
+.sideCatigoriys .sideCategoriesBox{
+    position: sticky;
+    height: 330px;
+    width: 200px;
+    color: white;
+    background-color: rgba(30, 30, 50, 0.701);
+    box-shadow: 0px 15px 20px 10px rgba(35, 0, 46, 0.13);
+    backdrop-filter: blur(30px);
+    padding: 20px 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.sideCatigoriys .sideCategoriesBox h3{
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.sideCatigoriys .sideCategoriesBox li::selection{
+    display: none;
+}
+.sideCatigoriys .sideCategoriesBox li{
+    list-style: none;
+    font-size: 1.1em;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.slider{
+    background-color: rgb(122, 102, 255);
+    width: 170px;
+    left: 15px;
+    height: 35px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.2s ease;
+}
+
+@media screen and  (min-width:320px) and (max-width:480px){
+    .sideCatigoriys{
+        display: none;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .sideCatigoriys{
+        display: none;
+    }
+}
+
